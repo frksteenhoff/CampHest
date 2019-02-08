@@ -1,0 +1,5 @@
+applications:
+- name: camphest
+  memory: 200M
+buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+
