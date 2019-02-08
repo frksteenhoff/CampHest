@@ -3,6 +3,7 @@
     <h1>{{msg}}</h1>
     <p>Email: {{email}}</p>
     <p>Telefon: {{phone}}</p>
+    <p>Eller kom forbi os i campen til sommer!</p>
   </div>
 </template>
 

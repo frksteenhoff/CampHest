@@ -8,8 +8,9 @@
     </div>
      <footer>
        <div class="footerinfo">
-          <p style="font-weight: bold">Camp Hest</p>
-          <p><a href="www.linkedin.com/in/frksteenhoff" style="padding-left:0">frksteenhoff</a></p> 
+          <p style="font-size: 30px; font-family: 'Permanent Marker'; font-weight: bold">Camp Hest</p>
+          <p>Clean Out Loud (det håber vi hvert fald på)</p>
+          <p><a href="www.linkedin.com/in/frksteenhoff" style="padding-left:0">@frksteenhoff</a></p> 
       </div>
     </footer> 
   </div>
@@ -55,6 +56,8 @@ header {
   background-color: #000000;
   color: #fd6a02;
   font-size: 24px;
+  line-height: 24px;
+  text-align: left;
 }
  
 hello {
@@ -81,6 +84,7 @@ p, h1, h2 {
 }
 
 h1 {
+  font-family: 'Permanent Marker';
   background-color:#fd6a02;
   color:#ffffff;
   display: inline;
