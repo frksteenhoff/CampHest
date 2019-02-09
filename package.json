@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run build",
-    "build": "node build/build.js"
+    "build": "node --max_old_space_size=256 build/build.js"
   },
   "dependencies": {
     "vue": "^2.5.2",
@@ -50,7 +50,7 @@
     "vue-template-compiler": "^2.5.2"
   },
   "engines": {
-    "node": ">= 7.0.0",
+    "node": "8.9.0",
     "npm": ">= 4.2.0"
   }
 }
