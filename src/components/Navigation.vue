@@ -50,7 +50,7 @@ export default {
 
 .spacing { 
     Margin-top: 20px;
-    Margin-right: 60px; 
+    Margin-right: 40px; 
       font-family: 'Permanent Marker';
 } 
 
