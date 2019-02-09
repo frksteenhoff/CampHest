@@ -10,6 +10,7 @@
        <div class="footerinfo">
           <p style="font-size: 30px; font-family: 'Permanent Marker'; font-weight: bold">Camp Hest</p>
           <p>Clean Out Loud (det håber vi hvert fald på)</p>
+          <p><a href="mailto:camphest@gmail.com?Subject=Vriiinsk" style="padding-left:0" target="_top">camphest@gmail.com</a></p>
           <p><a href="www.linkedin.com/in/frksteenhoff" style="padding-left:0">@frksteenhoff</a></p> 
       </div>
     </footer> 
@@ -31,8 +32,8 @@ export default {
 body {
   margin: 0;
   width: 100%;
-  background-image: url("./assets/camphest.jpg");
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 30%,rgba(255,255,255,0.9) 30%), url("../src/assets/camphest.jpg");
+  background-image: url("./assets/heste_promo/camphest_logo_large.jpg");
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 30%,rgba(255,255,255,0.9) 30%), url("../src/assets/heste_promo/camphest_logo_large.jpg");
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -40,7 +41,7 @@ body {
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Light';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000000;
@@ -94,7 +95,7 @@ h1 {
 }
 
 p {
-  font-size: 30px;
+  font-size: 20px; 
   line-height: 1.4;
 }
 
@@ -147,4 +148,13 @@ footer {
   margin-right: auto;
 }
 
+p.top_line {
+  font-weight:bold; 
+}
+
+p.end_line {
+  margin-top: 4em;
+  font-size: 30px; 
+  font-family:'Permanent Marker';
+}
 </style>

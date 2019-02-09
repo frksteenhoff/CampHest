@@ -1,13 +1,13 @@
 <template>
   <div>
-    <img src="../assets/hest_camp.jpg"/>
+    <img src="../assets/heste_fest/hest_camp.jpg"/>
     <h1>Hingste, hopper og ponnier..</h1>
     <p>Hvordan kommer man med i camp hest, er der forskelle på ny og gammel?</p>
     <h1>Vriiinsk!</h1>
     <ul>
         <div class="hest" v-for="hest in den_heste_liste" v-bind:key="hest.id"
            :to="`${hest.page}`">
-           <img class="img_about" src="../assets/pony.png"/>
+           <img class="img_about" src="../assets/pony_free.png"/>
 
            <p1>{{hest.name}}</p1>
            <p>{{hest.desc}}</p>
@@ -26,28 +26,28 @@ export default {
         {
           id: 0,
           name: "Loke",
-          img_path: '../assets/pony.png',
+          img_path: '../assets/pony_free.png',
           slogan: 'North East South Hest',
           desc: '..'
         },
         {
           id: 1,
           name: "Nanna",
-          img_path: '../assets/pony.png',
+          img_path: '../assets/pony_free.png',
           slogan: 'Star horse',
           desc: '..'        
           },
         {
           id: 2,
           name: "Niels",
-          img_path: '../assets/pony.png',
+          img_path: '../assets/pony_free.png',
           slogan: 'Mass = horse x acceleration',
           desc: '..'        
           },
         {
           id: 3,
           name: "Henriette",
-          img_path: '../assets/pony.png',
+          img_path: '../assets/pony_free.png',
           slogan: 'alias yolo="git push --horse',
           desc: '..'        
           }
