@@ -8,15 +8,18 @@
     </div>
      <footer>
        <div class="footerinfo">
-          <p style="font-size: 30px; font-family: 'Permanent Marker'; font-weight: bold">Camp Hest</p>
-          <p>Clean Out Loud (det håber vi hvert fald på)</p>
-          <p><a href="mailto:camphest@gmail.com?Subject=Vriiinsk" style="padding-left:0" target="_top">camphest@gmail.com</a></p>
-          <p><a href="www.linkedin.com/in/frksteenhoff" style="padding-left:0">@frksteenhoff</a></p> 
-          <p id="insta_logo">
+          <p style="font-size: 30px; font-family: 'Permanent Marker'; font-weight: bold">
+            Camp Hest
+            <!-- Adding logo inline -->
+            <span id="insta_logo">
             <a href="https://www.instagram.com/camp_hest/" target="_blank">
               <img style="float:right;" src="./assets/heste_promo/instagram_logo.png">
             </a>
+          </span>
           </p>
+          <p>Clean Out Loud (det håber vi hvert fald på)</p>
+          <p><a href="mailto:camphest@gmail.com?Subject=Vriiinsk" style="padding-left:0" target="_top">camphest@gmail.com</a></p>
+          <p><a href="www.linkedin.com/in/frksteenhoff" style="padding-left:0">@frksteenhoff</a></p> 
       </div>
     </footer> 
   </div>
