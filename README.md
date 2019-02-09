@@ -1,9 +1,9 @@
 # INGEN FEST UDEN HEST
 Repository for the upcoming Camp Hest website -- it will be *horseome*.
 
-Camp Hest is a concept created at Roskilde Festival. This upcoming website will contain information related to the camp's Roskilde participation, about upcoming events @ Roskilde Festival, pictures, videos -- let's see what we make it!
+Camp Hest is a concept created at the Danish Roskilde Festival. This upcoming website will contain information related to the camp's Roskilde participation, about upcoming events @ Roskilde Festival, pictures, videos -- let's see what we make it!
 
-![Camp Hest Logo](https://github.com/frksteenhoff/CampHest/blob/master/img/camphest.jpg)
+![Camp Hest Logo](https://github.com/frksteenhoff/CampHest/blob/master/src/assets/heste_promo/camphest_logo_large.jpg)
 
 ## Prerequisites
 * NodeJS
