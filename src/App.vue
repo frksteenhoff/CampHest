@@ -63,7 +63,7 @@ header {
   padding: 16px 0 16px 24px;
   background-color: #000000;
   color: #fd6a02;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 24px;
   text-align: left;
 }
@@ -97,7 +97,7 @@ h1 {
   margin-top: 21px;
 }
 p {
-  font-size: 20px; 
+  font-size: 26px; 
   line-height: 1.4;
 }
 ul {
@@ -109,7 +109,7 @@ li {
   margin: 0 10px;
 }
 p a {
-    font-size: 20px;
+    font-size: 26px;
 }
 #insta_logo img {
     margin: 21px;
