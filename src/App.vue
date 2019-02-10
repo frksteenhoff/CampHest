@@ -95,6 +95,7 @@ h1 {
   margin-left: 21px;
   padding-right: 21px;
   margin-top: 21px;
+  font-size: 2.5em;
 }
 p {
   font-size: 26px; 
@@ -109,7 +110,7 @@ li {
   margin: 0 10px;
 }
 p a {
-    font-size: 26px;
+    font-size: 20px;
 }
 #insta_logo img {
     margin: 21px;
