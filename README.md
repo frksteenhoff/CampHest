@@ -47,14 +47,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Deploying to IBM cloud
 To be able to deploy your changes to the IBM Cloud instance running the web page you need an IBM account. Ask @frksteenhoff for more information.
 
-Camp Hest Logo
-
-#### Folder structure
+## Folder structure
 ```
 ./                              <-- Repository
  ├── ..
- ├── build/                      <-- build files
- ├── config/                     <-- config files
+ ├── public/                     <-- if build fails, show this
+ ├── dist/                       <-- static build of webpage
  ├── src/                        <-- source code
  │    ├── assets/
  │    │     ├── heste_fest/      <-- Awesome pics of Camp Hest people @ Roskilde
@@ -72,11 +70,10 @@ Camp Hest Logo
  │    └── App.vue                <-- Parent
  │     
  ├── node_modules/               <-- node modules
- ├── static/                     <-- source code
  ├── .gitignore                  <-- The stuff we don't care about
+ ├── .cfignore                   <-- Information neede when pushing to IBM Cloud (Cloud Foundry)
  ├── manifest.yml                <-- Information for cloud purposes
  ├── package.json                <-- All that formal stuff
  ├── README.md                   <-- The project description made easy
- ├── index.html                  <-- Basic layout details
  └── ...
 ```
