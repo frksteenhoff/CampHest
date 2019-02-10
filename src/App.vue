@@ -27,19 +27,10 @@
 
 <script>
 import Navigation from './components/Navigation'
-import Contact from './components/Contact'
-import About from './components/About'
-import Events from './components/Events'
-import Hello from './components/Hello'
-
 export default {
   name: 'app',
   components: {
-    'Navigation': Navigation,
-    'Contact' : Contact,
-    'About' : About,
-    'Events' : Events,
-    'Hello' : Hello
+    'Navigation': Navigation
   }
 }
 </script>
@@ -76,10 +67,11 @@ header {
   line-height: 24px;
   text-align: left;
 }
- 
+
 hello {
   padding: 5px;
 }
+
 #content {
   padding-top: 55px; /* Should be larger than the height of the header to 
                         ensure that all text is shown correctly */
