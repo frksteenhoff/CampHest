@@ -27,16 +27,26 @@
 
 <script>
 import Navigation from './components/Navigation'
+import Contact from './components/Contact'
+import About from './components/About'
+import Events from './components/Events'
 import Hello from './components/Hello'
+
 export default {
   name: 'app',
   components: {
-    'Navigation': Navigation
+    'Navigation': Navigation,
+    'Contact' : Contact,
+    'About' : About,
+    'Events' : Events,
+    'Hello' : Hello
   }
 }
 </script>
 
 <style>
+@import url('//fonts.googleapis.com/css?family=Permanent+Marker:300,400,600,700&amp;lang=en');
+@import url('//fonts.googleapis.com/css?family=Roboto:300,400,600,700&amp;lang=en');
 body {
   margin: 0;
   width: 100%;
@@ -47,14 +57,12 @@ body {
   background-repeat: no-repeat;
   background-color: #cccccc;
 }
-
 #app {
   font-family: 'Roboto Light';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000000;
 }
-
 header {
   position: fixed;
   width: 100%;
@@ -72,26 +80,21 @@ header {
 hello {
   padding: 5px;
 }
-
 #content {
   padding-top: 55px; /* Should be larger than the height of the header to 
                         ensure that all text is shown correctly */
   min-height: 600px;
 }
-
-
  img {
   margin: 0;
   width: 100%;
   margin-bottom: 10px;
   justify-content: center;
 }
-
 p, h1, h2 {
   font-weight: normal;
   padding-left: 21px;
 }
-
 h1 {
   font-family: 'Permanent Marker';
   background-color:#fd6a02;
@@ -101,36 +104,29 @@ h1 {
   padding-right: 21px;
   margin-top: 21px;
 }
-
 p {
   font-size: 20px; 
   line-height: 1.4;
 }
-
 ul {
   list-style-type: none;
   padding: 0;
 }
-
 li {
   display: inline-block;
   margin: 0 10px;
 }
-
 p a {
     font-size: 20px;
 }
-
 #insta_logo img {
     margin: 21px;
     height: 40px;
     width: 40px;
 }
-
 #insta_logo a:hover {
     background-color: #000000;
 }
-
 a {
   color: #fd6a02;
   text-decoration: none !important;
@@ -142,7 +138,6 @@ a:hover {
   /*text-decoration: underline !important;*/
   background:#222831;
 }
-
 footer {
   width: 100%;
   position: absolute;
@@ -152,24 +147,20 @@ footer {
   background-color: #000000;
   color: #fd6a02;
 }
-
 .footerinfo p {
   font-size: 20px;
   margin-top: 0.4em;
   margin-bottom: 0.4em;
 }
-
 .imglong {
   width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 p.top_line {
   font-weight:bold; 
 }
-
 p.end_line {
   margin-top: 4em;
   font-size: 30px; 
