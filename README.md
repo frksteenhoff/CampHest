@@ -44,10 +44,14 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+### Deploying to IBM cloud
+To be able to deploy your changes to the IBM Cloud instance running the web page you need an IBM account. Ask @frksteenhoff for more information.
+
 Camp Hest Logo
 
-Folder structure
- ./                              <-- Repository
+#### Folder structure
+```
+./                              <-- Repository
  ├── ..
  ├── build/                      <-- build files
  ├── config/                     <-- config files
@@ -75,3 +79,4 @@ Folder structure
  ├── README.md                   <-- The project description made easy
  ├── index.html                  <-- Basic layout details
  └── ...
+```
