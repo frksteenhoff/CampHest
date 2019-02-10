@@ -93,7 +93,7 @@ img {
 }
 
 .hest p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .psmall {
