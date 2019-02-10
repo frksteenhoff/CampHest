@@ -112,7 +112,7 @@ p a {
     font-size: 20px;
 }
 #insta_logo img {
-    margin: 21px;
+    margin: 41px;
     height: 40px;
     width: 40px;
 }

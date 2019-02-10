@@ -2,18 +2,22 @@
   <div>
     <img src="../assets/heste_fest/hest_camp.jpg"/>
     <h1>Hingste, hopper og ponnier..</h1>
-    <p>Hvordan kommer man med i camp hest, er der forskelle på ny og gammel?</p>
+    <p>Historien om camp hest. Hvem er med, hvorfor?</p>
+
     <h1>Vriiinsk!</h1>
-    <ul>
+    <p>Alle heste har et slogan. De omhandler heste. Det er dem vi er vilde med.
+    
+    <div class="de_heste_venner">
+      <ul>
         <div class="hest" v-for="hest in den_heste_liste" v-bind:key="hest.id"
            :to="`${hest.page}`">
            <img class="img_about" src="../assets/pony_free.png"/>
 
            <p class="name">{{hest.name}}</p>
-           <p>{{hest.desc}}</p>
            <p class="small">" {{hest.slogan}} "</p>
-      </div>
-    </ul>
+        </div>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -50,6 +54,41 @@ export default {
           img_path: '../assets/pony_free.png',
           slogan: 'alias yolo="git push --horse',
           desc: '..'        
+          },
+        {
+          id: 4,
+          name: "Sophia",
+          img_path: '../assets/pony_free.png',
+          slogan: "Hestiny's Child",
+          desc: '..'        
+          },
+        {
+          id: 5,
+          name: "Jose",
+          img_path: '../assets/pony_free.png',
+          slogan: "You're simply the hest",
+          desc: '..'        
+          },
+        {
+          id: 6,
+          name: "Cille",
+          img_path: '../assets/pony_free.png',
+          slogan: "I hest my case",
+          desc: '..'        
+          },
+        {
+          id: 7,
+          name: "La Cour",
+          img_path: '../assets/pony_free.png',
+          slogan: "Ingen fest uden hest",
+          desc: '..'        
+          },
+        {
+          id: 8,
+          name: "Jesper",
+          img_path: '../assets/pony_free.png',
+          slogan: "Hestabe",
+          desc: '..'        
           }
       ]
     }
@@ -62,12 +101,13 @@ export default {
     margin-top: 40px;
     margin-left: 21px;  
     list-style-type: disc;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    columns: 2;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
     list-style-position: inside;
-    margin-bottom: 30px;
-    width: 1000px;
+    margin-bottom: 40px;
+    width: 90%;
+    align-content: center;
 }
 
 .name {
@@ -90,13 +130,14 @@ img {
 
 .hest p1{
     font-size: 20px;
+    line-height: 1em;
 }
 
 .hest p {
     font-size: 20px;
 }
 
-.psmall {
+p.small {
     font-style: italic;
 }
 
