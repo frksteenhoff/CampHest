@@ -59,8 +59,8 @@ div.topics {
 
 #hestebilleder img {
   transition: .5s ease;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   margin: 15px;
 }
 
