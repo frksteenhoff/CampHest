@@ -25,7 +25,7 @@ export default {
         phone: '+45 1234 5678'
       },
        {
-         id: 0,
+         id: 1,
         name: 'Mathias Geisler',
         email: 'something@x.com',
         phone: '+45 1234 5678'
@@ -44,7 +44,7 @@ export default {
 
 .middle {
   margin-top: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 

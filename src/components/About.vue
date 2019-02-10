@@ -9,9 +9,9 @@
            :to="`${hest.page}`">
            <img class="img_about" src="../assets/pony_free.png"/>
 
-           <p1>{{hest.name}}</p1>
+           <p class="name">{{hest.name}}</p>
            <p>{{hest.desc}}</p>
-           <psmall>" {{hest.slogan}} "</psmall>
+           <p class="small">" {{hest.slogan}} "</p>
       </div>
     </ul>
   </div>
@@ -70,7 +70,7 @@ export default {
     width: 1000px;
 }
 
-p1 {
+.name {
     font-weight: bold;
 }
 
@@ -96,7 +96,8 @@ img {
     font-size: 16px;
 }
 
-.hest psmall {
+.psmall {
     font-style: italic;
 }
+
 </style>

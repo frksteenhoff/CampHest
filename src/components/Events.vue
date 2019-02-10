@@ -43,8 +43,5 @@ export default {
 }
 </script>
 <style>
-.link {
-  font-weight: bold;
-}
 
 </style>
