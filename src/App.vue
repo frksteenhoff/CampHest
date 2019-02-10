@@ -63,7 +63,7 @@ header {
   padding: 16px 0 16px 24px;
   background-color: #000000;
   color: #fd6a02;
-  font-size: 26px;
+  font-size: 30px;
   line-height: 24px;
   text-align: left;
 }
@@ -95,7 +95,6 @@ h1 {
   margin-left: 21px;
   padding-right: 21px;
   margin-top: 21px;
-  font-size: 2.5em;
 }
 p {
   font-size: 26px; 
