@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="under_header">
       <h1>Kontaktperson</h1>
       <div class="contactinfo" v-for="person in kontaktpersoner" v-bind:key="person.id"
           :to="`${person.no}`">
@@ -21,14 +21,14 @@ export default {
       kontaktpersoner: [ {
         id: 0,
         name: 'Jeppe Nørregaard',
-        email: 'something@x.com',
-        phone: '+45 1234 5678'
+        email: 'jeppenuuk@gmail.com',
+        phone: '+45 5382 1111'
       },
        {
          id: 1,
         name: 'Mathias Geisler',
-        email: 'something@x.com',
-        phone: '+45 1234 5678'
+        email: 'geisleren@gmail.com',
+        phone: '+45 6013 1579'
       }
     ]
   }
@@ -43,8 +43,8 @@ export default {
 }
 
 .middle {
-  margin-top: 30px;
-  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 

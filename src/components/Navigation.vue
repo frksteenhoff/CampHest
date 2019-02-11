@@ -34,6 +34,11 @@ export default {
           id: 3,
           text: 'Roskilde',
           page:'/Events'
+        },
+        {
+          id: 4,
+          text: 'Hjælp',
+          page:'/Help'
         }
       ]
     }

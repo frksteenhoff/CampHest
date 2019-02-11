@@ -41,6 +41,7 @@ export default {
 body {
   margin: 0;
   width: 100%;
+  background-position: left 30px;
   background-image: url("./assets/heste_promo/camphest_logo_large.jpg");
   background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 30%,rgba(255,255,255,0.9) 30%), url("../src/assets/heste_promo/camphest_logo_large.jpg");
   background-size: 100%;
@@ -75,9 +76,10 @@ hello {
 #content {
   padding-top: 55px; /* Should be larger than the height of the header to 
                         ensure that all text is shown correctly */
-  min-height: 600px;
+  min-height: 800px;
 }
- img {
+
+img {
   margin: 0;
   width: 100%;
   margin-bottom: 10px;
@@ -158,4 +160,8 @@ p.end_line {
   font-size: 30px; 
   font-family:'Permanent Marker';
 }
+.under_header {
+  margin-top: 21px;
+}
+
 </style>

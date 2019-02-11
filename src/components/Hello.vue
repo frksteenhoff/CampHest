@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div id="topimg">
+    <div>
       <img src="../assets/heste_promo/camphest_logo_large.jpg" alt="Camp Hest @ Roskilde">
     </div>
 
