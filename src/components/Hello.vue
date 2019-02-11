@@ -19,7 +19,7 @@
     </div>
 
     <!-- IMAGES -->
-    <div id="hestebilleder">
+    <div class="hestebilleder">
       <img src="../assets/heste_fest/hest1.jpg" alt="Camp Hest @ Roskilde">
       <img src="../assets/heste_fest/hest2.jpg" alt="Camp Hest @ Roskilde">
       <img src="../assets/heste_fest/hest3.jpg" alt="Camp Hest @ Roskilde">
@@ -57,22 +57,20 @@ div.topics {
   margin-bottom: 40px;
 }
 
-#hestebilleder img {
+.hestebilleder img {
   transition: .5s ease;
   height: 300px;
   width: 300px;
   margin: 15px;
 }
 
-#hestebilleder img:hover {
+.hestebilleder img:hover {
     opacity: 0.3;
-
 }
 
-#hestebilleder {
+.hestebilleder {
+  margin: 0 auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 90%;
 }
 

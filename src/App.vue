@@ -19,7 +19,7 @@
           </p>
           <p>Clean Out Loud (det håber vi hvert fald på)</p>
           <p><a href="mailto:camphest@gmail.com?Subject=Vriiinsk" style="padding-left:0" target="_top">camphest@gmail.com</a></p>
-          <p><a href="www.linkedin.com/in/frksteenhoff" style="padding-left:0">@frksteenhoff</a></p> 
+          <p><a href="https://www.linkedin.com/in/frksteenhoff/" style="padding-left:0">@frksteenhoff</a></p> 
       </div>
     </footer> 
   </div>
@@ -38,6 +38,7 @@ export default {
 <style>
 @import url('//fonts.googleapis.com/css?family=Permanent+Marker:300,400,600,700&amp;lang=en');
 @import url('//fonts.googleapis.com/css?family=Roboto:300,400,600,700&amp;lang=en');
+
 body {
   margin: 0;
   width: 100%;
@@ -84,6 +85,7 @@ img {
   width: 100%;
   margin-bottom: 10px;
   justify-content: center;
+
 }
 p, h1, h2 {
   font-weight: normal;
@@ -106,6 +108,7 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
@@ -151,6 +154,8 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 21px;
+  margin-bottom: 21px;
 }
 p.top_line {
   font-weight:bold; 
