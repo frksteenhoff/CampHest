@@ -39,6 +39,12 @@ export default {
 @import url('//fonts.googleapis.com/css?family=Permanent+Marker:300,400,600,700&amp;lang=en');
 @import url('//fonts.googleapis.com/css?family=Roboto:300,400,600,700&amp;lang=en');
 
+@media only screen and (max-width: 480px) {
+       h1 { font-size: 18px !important; }
+       h2 { font-size: 14px !important; }
+       h3 { font-size: 12px !important; }
+     }
+
 body {
   margin: 0;
   width: 100%;
