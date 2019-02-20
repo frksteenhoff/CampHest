@@ -68,6 +68,7 @@ header {
   font-size: 30px;
   line-height: 24px;
   text-align: left;
+  z-index: 99;
 }
 
 hello {
