@@ -21,11 +21,6 @@ export default new Router({
       component: About
     }, 
     {
-      path: '/contact',
-      name: 'Contact',
-      component: Contact
-    }, 
-    {
       path: '/events',
       name: 'Events',
       component: Events
@@ -34,6 +29,11 @@ export default new Router({
       path: '/help',
       name: 'Hjælp',
       component: Help
+    }, 
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
     }
   ],
   scrollBehavior (to, from, savedPosition) {

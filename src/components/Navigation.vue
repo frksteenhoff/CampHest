@@ -1,12 +1,12 @@
 <template>
   <div>
     <nav>
-      <!--<img class="logo" src="../assets/logo_placeholder.png"/>-->
+     <!-- <img class="logo" src="../assets/logo_placeholder.png"/>-->
       <router-link class='spacing' v-for="routes in links" 
       v-bind:key="routes.id"
       :to="`${routes.page}`">{{routes.text}}</router-link>
     </nav>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -22,23 +22,23 @@ export default {
         },
         {
           id: 1,
-          text: 'Your stable mates',
-          page:'/About'
-        },
-        {
-          id: 2,
-          text: 'Kontakt',
-          page:'/Contact'
-        },
-        {
-          id: 3,
           text: 'Roskilde',
           page:'/Events'
         },
         {
-          id: 4,
+          id: 2,
           text: 'Hjælp',
           page:'/Help'
+        },
+        {
+          id: 3,
+          text: 'Your stable mates',
+          page:'/About'
+        },
+        {
+          id: 4,
+          text: 'Kontakt',
+          page:'/Contact'
         }
       ]
     }
