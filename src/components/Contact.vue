@@ -1,6 +1,7 @@
 <template>
     <div class="under_header">
       <h1>Kontaktperson</h1>
+      <img class ="to_the_side" src="../assets/heste_fest/arena_fest.jpg">
       <div class="contactinfo" v-for="person in kontaktpersoner" v-bind:key="person.id"
           :to="`${person.no}`">
       <div class="middle">
@@ -53,4 +54,10 @@ export default {
   margin-bottom: 0.1em;
 }
 
+.to_the_side {
+  width: 60%;
+  position: relative;
+  float: right;
+  margin-right: 21px;
+}
 </style>
