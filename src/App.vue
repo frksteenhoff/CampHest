@@ -91,19 +91,22 @@ img {
 p, h1, h2 {
   font-weight: normal;
   padding-left: 21px;
+  padding-right: 21px;
 }
 h1 {
   font-family: 'Permanent Marker';
   background-color:#fd6a02;
   color:#ffffff;
   display: inline;
-  margin-left: 21px;
-  padding-right: 21px;
-  margin-top: 21px;
+  margin-left: 41px;
+  margin-top: 41px;
+  margin-right: 41px;
 }
 p {
   font-size: 26px; 
   line-height: 1.4;
+  margin-left: 21px;
+  margin-right: 21px;
 }
 ul {
   list-style-type: none;
@@ -149,14 +152,15 @@ footer {
   font-size: 20px;
   margin-top: 0.4em;
   margin-bottom: 0.4em;
+  padding-left: 21px;
 }
 .imglong {
   width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 21px;
-  margin-bottom: 21px;
+  margin-top: 41px;
+  margin-bottom: 41px;
 }
 p.top_line {
   font-weight:bold; 

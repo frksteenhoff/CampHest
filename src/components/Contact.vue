@@ -58,6 +58,6 @@ export default {
   width: 60%;
   position: relative;
   float: right;
-  margin-right: 21px;
+  margin-right: 41px;
 }
 </style>

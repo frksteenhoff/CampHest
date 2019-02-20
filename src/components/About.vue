@@ -99,7 +99,8 @@ export default {
 <style>
  ul {
     margin-top: 40px;
-    margin-left: 21px;  
+    margin-left: 41px;
+    margin-right: 41px;  
     list-style-type: disc;
     -webkit-columns: 3;
     -moz-columns: 3;
