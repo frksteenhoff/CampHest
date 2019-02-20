@@ -7,6 +7,7 @@ Camp Hest is a concept created at the Danish Roskilde Festival. This upcoming we
 
 ## Prerequisites
 NodeJS
+
 Vue.js
 
 ### Instructions
