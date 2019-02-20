@@ -33,11 +33,6 @@ npm run build
 
 *Run this command before pushing to IBM cloud to put your changes into effect.*
 
-### Run your tests
-```
-npm run test
-```
-
 ### Lints and fixes files
 ```
 npm run lint
