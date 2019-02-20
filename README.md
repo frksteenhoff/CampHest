@@ -13,9 +13,11 @@ Vue.js
 ### Instructions
 Execute the following command to load dependencies:
 
+```
 $ npm install -g @vue-cli 
 $ npm i vue vue-router
 $ npm install
+```
 
 ## Project setup
 ```
