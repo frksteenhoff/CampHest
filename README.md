@@ -31,6 +31,8 @@ npm run serve
 npm run build
 ```
 
+*Run this command before pushing to IBM cloud to put your changes into effect.*
+
 ### Run your tests
 ```
 npm run test
