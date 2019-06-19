@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div>
-      <img src="../assets/heste_promo/camphest_logo_medium_wide.jpg" alt="Camp Hest @ Roskilde">
+      <img src="../assets/heste_promo/camphest_logo_large_widest.jpg" alt="Camp Hest @ Roskilde">
     </div>
 
     <!-- QUOTES -->
