@@ -60,4 +60,5 @@ export default {
   float: right;
   margin-right: 41px;
 }
+
 </style>

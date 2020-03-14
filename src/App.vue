@@ -77,14 +77,10 @@ header {
   z-index: 99;
 }
 
-hello {
-  padding: 5px;
-}
-
 #content {
   padding-top: 55px; /* Should be larger than the height of the header to 
                         ensure that all text is shown correctly */
-  min-height: 800px;
+  min-height: 1000px;
 }
 
 img {
