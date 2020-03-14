@@ -8,9 +8,10 @@ Visit the website at [camphest.herokuapp.com](https://camphest.herokuapp.com/#/E
 ![Camp Hest!](https://github.com/frksteenhoff/CampHest/blob/master/src/assets/heste_promo/camphest_logo_large.jpg)
 
 ## Prerequisites
-NodeJS
-
-Vue.js
+* NodeJS
+* Vue.js
+* Bootstrap Vue
+* TypeScript
 
 ### Instructions
 Execute the following command to load dependencies:
