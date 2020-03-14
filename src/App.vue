@@ -19,19 +19,28 @@
           </p>
           <p>Clean Out Loud</p>
           <p><a href="mailto:camphest@gmail.com?Subject=Vriiinsk" style="padding-left:0" target="_top">camphest@gmail.com</a></p>
-          <p><a href="https://www.instagram.com/camp_hest" style="padding-left:0">@camp_hest</a></p> 
+          <p><a href="https://www.instagram.com/camp_hest" style="padding-left:0">@camp_hest</a></p>
       </div>
-    </footer> 
+    </footer>
   </div>
 </template>
 
-<script>
-import Navigation from './components/Navigation'
-export default {
-  name: 'app',
-  components: {
-    'Navigation': Navigation
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
+import Navigation from './components/Navigation.vue'
+
+const AppProps = Vue.extend({
+  props: {
   }
+})
+
+@Component({
+  components: {
+    Navigation
+  }
+})
+
+export default class App extends AppProps {
 }
 </script>
 
@@ -67,7 +76,7 @@ header {
   width: 100%;
   top:0;
   margin: 0;
-  height: 24px;
+  height: 56px;
   padding: 16px 0 16px 24px;
   background-color: #000000;
   color: #fd6a02;
@@ -78,7 +87,7 @@ header {
 }
 
 #content {
-  padding-top: 55px; /* Should be larger than the height of the header to 
+  padding-top: 55px; /* Should be larger than the height of the header to
                         ensure that all text is shown correctly */
   min-height: 1000px;
 }
@@ -105,7 +114,7 @@ h1 {
   margin-right: 41px;
 }
 p {
-  font-size: 26px; 
+  font-size: 26px;
   line-height: 1.4;
   margin-left: 21px;
   margin-right: 21px;
@@ -121,6 +130,7 @@ li {
 }
 p a {
     font-size: 20px;
+    text-decoration: none !important;
 }
 #insta_logo img {
     margin: 41px;
@@ -129,10 +139,11 @@ p a {
 }
 #insta_logo a:hover {
     background-color: #000000;
+    color: #fd6a02;
 }
 a {
   color: #fd6a02;
-  text-decoration: none !important;
+  text-decoration: none;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -140,6 +151,8 @@ a {
 a:hover {
   /*text-decoration: underline !important;*/
   background:#222831;
+  text-decoration: none !important;
+  color: #fd6a02 !important;
 }
 footer {
   width: 100%;
@@ -150,11 +163,13 @@ footer {
   background-color: #000000;
   color: #fd6a02;
 }
-.footerinfo p {
+.footerinfo p, .footerinfo p a {
   font-size: 20px;
   margin-top: 0.4em;
   margin-bottom: 0.4em;
   padding-left: 21px;
+  text-decoration: none !important;
+  color: #fd6a02 !important;
 }
 .imglong {
   width: 60%;
@@ -165,11 +180,11 @@ footer {
   margin-bottom: 41px;
 }
 p.top_line {
-  font-weight:bold; 
+  font-weight:bold;
 }
 p.end_line {
   margin-top: 4em;
-  font-size: 30px; 
+  font-size: 30px;
   font-family:'Permanent Marker';
 }
 .under_header {

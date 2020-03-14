@@ -1,49 +1,46 @@
 <template>
   <div>
-    <!--<img class="logo" src="../assets/logo_placeholder.png"/>-->
-    <nav>
-		<router-link class='spacing' v-for="routes in links" 
-			v-bind:key="routes.id"
-			:to="`${routes.page}`">{{routes.text}}
-		</router-link>
+  <!--<img class="logo" src="../assets/logo_placeholder.png"/>-->
+  <nav>
+    <router-link class='spacing' v-for="routes in links"
+      v-bind:key="routes.id"
+        :to="`${routes.page}`">{{routes.text}}
+      </router-link>
     </nav>
-    </div>
+  </div>
 </template>
 
-<script>
-export default {
-  name: 'Navigation',
-  data() {
-    return {
-      links: [
-        {
-          id: 0,
-          text: 'Hjem',
-          page:'/'
-        },
-        {
-          id: 1,
-          text: 'Roskilde',
-          page:'/Events'
-        },
-        {
-          id: 2,
-          text: 'Hjælp',
-          page:'/Help'
-        },
-        {
-          id: 3,
-          text: 'Your stable mates',
-          page:'/About'
-        },
-        {
-          id: 4,
-          text: 'Kontakt',
-          page:'/Contact'
-        }
-      ]
+<script lang="ts">
+import { Vue } from 'vue-property-decorator'
+
+export default class Navigation extends Vue {
+  links = [
+    {
+      id: 0,
+      text: 'Hjem',
+      page: '/'
+    },
+    {
+      id: 1,
+      text: 'Roskilde',
+      page: '/Events'
+    },
+    {
+      id: 2,
+      text: 'Hjælp',
+      page: '/Help'
+    },
+    {
+      id: 3,
+      text: 'Your stable mates',
+      page: '/About'
+    },
+    {
+      id: 4,
+      text: 'Kontakt',
+      page: '/Contact'
     }
-  }
+  ]
 }
 </script>
 
@@ -54,11 +51,12 @@ export default {
   margin-right: 30px;
 }
 
-.spacing { 
+.spacing {
     Margin-top: 20px;
-    Margin-right: 40px; 
-      font-family: 'Permanent Marker';
-} 
+    Margin-right: 40px;
+    font-family: 'Permanent Marker';
+    color: #fd6a02;
+}
 
 </style>
 
