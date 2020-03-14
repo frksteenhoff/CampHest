@@ -1,10 +1,11 @@
 <template>
   <div>
+    <!--<img class="logo" src="../assets/logo_placeholder.png"/>-->
     <nav>
-     <!-- <img class="logo" src="../assets/logo_placeholder.png"/>-->
-      <router-link class='spacing' v-for="routes in links" 
-      v-bind:key="routes.id"
-      :to="`${routes.page}`">{{routes.text}}</router-link>
+		<router-link class='spacing' v-for="routes in links" 
+      		v-bind:key="routes.id"
+      		:to="`${routes.page}`">{{routes.text}}
+		</router-link>
     </nav>
     </div>
 </template>

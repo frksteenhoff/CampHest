@@ -17,9 +17,9 @@
             </a>
           </span>
           </p>
-          <p>Clean Out Loud (E)</p>
+          <p>Clean Out Loud</p>
           <p><a href="mailto:camphest@gmail.com?Subject=Vriiinsk" style="padding-left:0" target="_top">camphest@gmail.com</a></p>
-          <p><a href="https://www.linkedin.com/in/frksteenhoff/" style="padding-left:0">@frksteenhoff</a></p> 
+          <p><a href="https://www.instagram.com/camp_hest" style="padding-left:0">@camp_hest</a></p> 
       </div>
     </footer> 
   </div>
