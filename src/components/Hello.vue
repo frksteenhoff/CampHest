@@ -1,8 +1,9 @@
 <template>
-  <div class="hello">
+<div>
     <div>
-      <img src="../assets/heste_promo/camphest_logo_large_widest.jpg" alt="Camp Hest @ Roskilde" />
+      <b-img fluid-grow src="https://github.com/frksteenhoff/CampHest/blob/master/src/assets/heste_promo/camphest_logo_large_widest.jpg?raw=true" alt="Camp Hest @ Roskilde" />
     </div>
+  <b-container>
 
     <!-- QUOTES -->
     <!--<div class="quote">
@@ -12,10 +13,19 @@
       <cite>Thue Gram-Hansen</cite>
     </div>-->
 
-    <div class="topics" v-for="topic in frontPageTopics" v-bind:key="topic.id" :to="`${topic.no}`">
-      <h1>{{ topic.header }}</h1>
-      <p>{{ topic.desc }}</p>
-    </div>
+    <b-row
+      class="mt-2"
+      v-for="topic in frontPageTopics"
+      :key="topic.id"
+      :to="`${topic.no}`"
+    >
+      <b-col cols="12" class="mb-2">
+        <h1>{{ topic.header }}</h1>
+      </b-col>
+      <b-col cols="12">
+        <p>{{ topic.desc }}</p>
+      </b-col>
+    </b-row>
 
     <!-- IMAGES -->
     <div class="hestebilleder">
@@ -32,7 +42,8 @@
       <img src="../assets/heste_fest/hest3.jpg" alt="Camp Hest @ Roskilde" />
       <img src="../assets/heste_fest/hest4.jpg" alt="Camp Hest @ Roskilde" />
     </div>
-  </div>
+  </b-container>
+</div>
 </template>
 
 <script lang="ts">

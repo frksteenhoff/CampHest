@@ -1,14 +1,26 @@
 <template>
   <div>
-    <img src="../assets/heste_fest/hest_camp.jpg" />
-    <h1>Hingste, hopper og ponnier..</h1>
-    <p>Historien om camp hest. Hvem er med, hvorfor?</p>
-
-    <h1>Vriiinsk!</h1>
-    <p>Alle heste har et slogan. De omhandler heste. Det er dem vi er vilde med.</p>
+    <b-img src="https://github.com/frksteenhoff/CampHest/blob/master/src/assets/heste_fest/hest_camp.jpg?raw=true" fluid-grow alt="Camp Hest"></b-img>
+    <b-container>
+      <b-row
+        v-for="desc in descriptions"
+        :key="desc.header"
+        class="mt-3"
+      >
+        <b-col cols="12" class="mb-2">
+          <h1>{{ desc.header }}</h1>
+        </b-col>
+        <b-col cols="12">
+          <p>{{ desc.paragraph}}</p>
+        </b-col>
+      </b-row>
+    </b-container>
     <div class="de_heste_venner">
       <ul>
-        <div class="hest" v-for="hest in den_heste_liste" v-bind:key="hest.id" :to="`${hest.page}`">
+        <div class="hest"
+          v-for="hest in den_heste_liste"
+          :key="hest.id"
+          :to="`${hest.page}`">
           <img class="img_about" src="../assets/pony_free.png" />
 
           <p class="name">{{hest.name}}</p>
@@ -28,6 +40,17 @@ const AppProps = Vue.extend({
 
 @Component({})
 export default class About extends AppProps {
+  descriptions = [
+    {
+      header: 'Hingste, hopper og ponnier..',
+      paragraph: 'Historien om camp hest. Hvem er med, hvorfor?'
+    },
+    {
+      header: 'Hingste, hopper og ponnier..',
+      paragraph: 'Historien om camp hest. Hvem er med, hvorfor?'
+    }
+  ];
+
   den_heste_liste = [
     {
       id: 0,

@@ -1,8 +1,18 @@
 <template>
   <div id="app">
-    <header>
-      <Navigation></Navigation>
-    </header>
+  <b-navbar toggleable="lg" type="dark" variant="hest">
+    <b-navbar-brand href="/">CampHest</b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+          <div v-for="link in links" :key="link.id">
+            <b-nav-item :to="link.page">{{ link.text }}</b-nav-item>
+          </div>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
     <div id="content">
       <router-view/>
     </div>
@@ -27,8 +37,6 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import Navigation from './components/Navigation.vue'
-
 const AppProps = Vue.extend({
   props: {
   }
@@ -36,11 +44,37 @@ const AppProps = Vue.extend({
 
 @Component({
   components: {
-    Navigation
   }
 })
 
 export default class App extends AppProps {
+  links = [
+    {
+      id: 0,
+      text: 'Hjem',
+      page: '/'
+    },
+    {
+      id: 1,
+      text: 'Roskilde',
+      page: '/Events'
+    },
+    {
+      id: 2,
+      text: 'Hjælp',
+      page: '/Help'
+    },
+    {
+      id: 3,
+      text: 'Your stable mates',
+      page: '/About'
+    },
+    {
+      id: 4,
+      text: 'Kontakt',
+      page: '/Contact'
+    }
+  ]
 }
 </script>
 
@@ -71,24 +105,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #000000;
 }
-header {
-  position: fixed;
-  width: 100%;
-  top:0;
-  margin: 0;
-  height: 56px;
-  padding: 16px 0 16px 24px;
-  background-color: #000000;
-  color: #fd6a02;
+
+h1 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+
+}
+nav, li a.nav-link, a.link-item {
+  color: #fd6a02 !important;
   font-size: 30px;
-  line-height: 24px;
-  text-align: left;
-  z-index: 99;
+  font-family: 'Permanent Marker';
+}
+
+.bg-hest {
+  background-color:black !important;
 }
 
 #content {
-  padding-top: 55px; /* Should be larger than the height of the header to
-                        ensure that all text is shown correctly */
   min-height: 1000px;
 }
 
