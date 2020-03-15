@@ -111,6 +111,10 @@ h1 {
   margin-bottom: 0.5rem !important;
 
 }
+
+ul.navbar-nav {
+  margin-top: 0 !important;
+}
 nav, li a.nav-link, a.link-item {
   color: #fd6a02 !important;
   font-size: 30px;
@@ -203,14 +207,6 @@ footer {
   padding-left: 21px;
   text-decoration: none !important;
   color: #fd6a02 !important;
-}
-.imglong {
-  width: 60%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 41px;
-  margin-bottom: 41px;
 }
 p.top_line {
   font-weight:bold;
