@@ -129,8 +129,8 @@ nav, li a.nav-link, a.link-item {
   min-height: 1000px;
 }
 
-#nav-collapse.navbar-collapse.collapse{
-  height: 0.45rem;
+#nav-collapse.navbar-collapse.collapse, nav{
+  height: 4rem;
 }
 
 img {
