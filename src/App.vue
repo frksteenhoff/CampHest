@@ -130,7 +130,7 @@ nav, li a.nav-link, a.link-item {
 }
 
 #nav-collapse.navbar-collapse.collapse{
-  height: 0.33rem;
+  height: 0.45rem;
 }
 
 img {
