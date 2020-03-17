@@ -9,7 +9,7 @@
       </b-col>
     </b-row>
     <b-row class="m-3">
-      <b-img fluid-grow src="https://github.com/frksteenhoff/CampHest/blob/master/src/assets/heste_fest/hest_maddie.jpg?raw=true" />
+      <img src="../assets/heste_fest/hest_maddie.jpg" alt="Camp Hest @ Roskilde" />
     </b-row>
    <!-- List all prior events -->
     <b-row

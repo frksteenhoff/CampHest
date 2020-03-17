@@ -1,7 +1,7 @@
 <template>
 <div>
     <div>
-      <b-img fluid-grow src="https://github.com/frksteenhoff/CampHest/blob/master/src/assets/heste_promo/camphest_logo_large_widest.jpg?raw=true" alt="Camp Hest @ Roskilde" />
+      <img src="../assets/heste_promo/camphest_logo_large_widest.jpg" alt="Camp Hest @ Roskilde" />
     </div>
   <b-container>
 

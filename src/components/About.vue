@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-img src="https://github.com/frksteenhoff/CampHest/blob/master/src/assets/heste_fest/hest_camp.jpg?raw=true" fluid-grow alt="Camp Hest"></b-img>
+    <img src="../assets/heste_fest/hest_camp.jpg"  alt="Camp Hest" />
     <b-container>
       <b-row
         v-for="desc in descriptions"
