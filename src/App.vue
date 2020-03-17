@@ -100,7 +100,7 @@ body {
   background-color: #cccccc;
 }
 #app {
-  font-family: 'Roboto Light';
+  font-family: 'Roboto Light', 'Roboto', "Arial", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000000;
@@ -113,7 +113,7 @@ h1 {
 }
 
 ul.navbar-nav {
-  margin-top: 0 !important;
+  margin-top: 0;
 }
 nav, li a.nav-link, a.link-item {
   color: #fd6a02 !important;
@@ -127,6 +127,10 @@ nav, li a.nav-link, a.link-item {
 
 #content {
   min-height: 1000px;
+}
+
+#nav-collapse.navbar-collapse.collapse{
+  height: 0.33rem;
 }
 
 img {
@@ -147,7 +151,6 @@ h1 {
   color:#ffffff;
   display: inline;
   margin-left: 41px;
-  margin-top: 41px;
   margin-right: 41px;
 }
 p {
