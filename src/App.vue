@@ -118,6 +118,7 @@ ul.navbar-nav {
 nav, li a.nav-link, a.link-item {
   color: #fd6a02 !important;
   font-size: 30px;
+  background: #000000;
   font-family: 'Permanent Marker';
 }
 
