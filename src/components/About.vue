@@ -44,10 +44,6 @@ export default class About extends AppProps {
     {
       header: 'Hingste, hopper og ponnier..',
       paragraph: 'Historien om camp hest. Hvem er med, hvorfor?'
-    },
-    {
-      header: 'Hingste, hopper og ponnier..',
-      paragraph: 'Historien om camp hest. Hvem er med, hvorfor?'
     }
   ];
 

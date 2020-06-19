@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  <b-navbar toggleable="lg" type="dark" variant="hest">
+  <b-navbar sticky toggleable="lg" type="dark" variant="hest">
     <b-navbar-brand href="/">CampHest</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -126,7 +126,7 @@ nav, li a.nav-link, a.link-item {
 }
 
 #content {
-  min-height: 1000px;
+  min-height: 100vh;
 }
 
 #nav-collapse.navbar-collapse.collapse, nav{
@@ -154,7 +154,7 @@ h1 {
   margin-right: 41px;
 }
 p {
-  font-size: 26px;
+  font-size: 1.3rem;
   line-height: 1.4;
   margin-left: 21px;
   margin-right: 21px;

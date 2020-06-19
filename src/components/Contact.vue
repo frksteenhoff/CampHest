@@ -41,7 +41,7 @@ export default class Contact extends AppProps {
 }
 </script>
 
-<style>
+<style scoped>
 
 .contactinfo {
   margin-top: 21px;
@@ -62,6 +62,10 @@ export default class Contact extends AppProps {
   position: relative;
   float: right;
   margin-right: 41px;
+}
+
+p {
+  font-size: 1rem;
 }
 
 </style>
