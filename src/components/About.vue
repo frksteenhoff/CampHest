@@ -2,37 +2,44 @@
   <div>
     <img src="../assets/heste_fest/hest_camp.jpg"  alt="Camp Hest" />
     <b-container>
-      <b-row
-        v-for="desc in descriptions"
-        :key="desc.header"
-        class="mt-3"
-      >
+      <b-row class="mt-3 mb-2">
         <b-col cols="12" class="mb-2">
-          <h1>{{ desc.header }}</h1>
+          <h1>Deltagere Roskilde Hestival {{ chosenYear }} @ Følsborg</h1>
         </b-col>
-        <b-col cols="12">
-          <p>{{ desc.paragraph}}</p>
+        <b-col>
+          <p>Her kan du læse lidt om alle deltagere i Camp Hest fra campens start i 2014 til i dag.</p>
         </b-col>
       </b-row>
-    </b-container>
-    <div class="de_heste_venner">
-      <ul>
-        <div class="hest"
+      <b-row class="pl-5 pr-5">
+          <b-col cols="6" class="mb-3">
+            <b-form-select v-model="chosenYear" :options="campHestYears">
+              <template v-slot:first>
+                <b-form-select-option :value="null" disabled>-- Vælg et årstal --</b-form-select-option>
+              </template>
+            </b-form-select>
+          </b-col>
+      </b-row>
+    <b-row>
+        <b-col cols="4" class="hest"
           v-for="hest in den_heste_liste"
-          :key="hest.id"
-          :to="`${hest.page}`">
-          <img class="img_about" src="../assets/pony_free.png" />
+          :key="hest.name + hest.imageUrl">
+          <div v-if="hest.yearsAtRoskilde.includes(chosenYear.toString()) && hest.imageUrl && hest.slogan">
+            <!-- <img class="img_about" :src="getImage(hest.imageUrl)" />-->
 
-          <p class="name">{{hest.name}}</p>
-          <p class="small">" {{hest.slogan}} "</p>
-        </div>
-      </ul>
-    </div>
+            <p class="name">{{ hest.name }}<span style="font-style: italic; font-weight: normal" v-if="hest.alias">{{", " + hest.alias }}</span></p>
+            <p class="small">" {{ hest.slogan }} "</p>
+            <p class="small" style="font-style: normal;">{{ hest.funFact }}</p>
+          </div>
+        </b-col>
+    </b-row>
+    </b-container>
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
+import horses from '../data/horses.json'
+import { HorseDescription } from '../types'
 
 const AppProps = Vue.extend({
   props: {}
@@ -40,79 +47,22 @@ const AppProps = Vue.extend({
 
 @Component({})
 export default class About extends AppProps {
-  descriptions = [
-    {
-      header: 'Hingste, hopper og ponnier..',
-      paragraph: 'Historien om camp hest. Hvem er med, hvorfor?'
-    }
-  ];
+  firstYear = 2014
+  chosenYear: number = this.currentYear
+  campHestYears: number[] = Array(this.currentYear - this.firstYear + 1).fill(1).map((x, y) => (x + y + this.firstYear - 1))
+  den_heste_liste: HorseDescription[] = horses;
 
-  den_heste_liste = [
-    {
-      id: 0,
-      name: 'Loke',
-      imgPath: '../assets/pony_free.png',
-      slogan: 'North East South Hest',
-      desc: '..'
-    },
-    {
-      id: 1,
-      name: 'Nanna',
-      imgPath: '../assets/pony_free.png',
-      slogan: 'Star horse',
-      desc: '..'
-    },
-    {
-      id: 2,
-      name: 'Niels',
-      imgPath: '../assets/pony_free.png',
-      slogan: 'Mass = horse x acceleration',
-      desc: '..'
-    },
-    {
-      id: 3,
-      name: 'Henriette',
-      imgPath: '../assets/pony_free.png',
-      slogan: "alias yolo='git push --horse",
-      desc: '..'
-    },
-    {
-      id: 4,
-      name: 'Sophia',
-      imgPath: '../assets/pony_free.png',
-      slogan: "Hestiny's Child",
-      desc: '..'
-    },
-    {
-      id: 5,
-      name: 'Jose',
-      imgPath: '../assets/pony_free.png',
-      slogan: "You're simply the hest",
-      desc: '..'
-    },
-    {
-      id: 6,
-      name: 'Cille',
-      imgPath: '../assets/pony_free.png',
-      slogan: 'I hest my case',
-      desc: '..'
-    },
-    {
-      id: 7,
-      name: 'La Cour',
-      imgPath: '../assets/pony_free.png',
-      slogan: 'Ingen fest uden hest',
-      desc: '..'
-    },
-    {
-      id: 8,
-      name: 'Jesper',
-      imgPath: '../assets/pony_free.png',
-      slogan: 'Hestabe',
-      desc: '..'
-    }
-  ];
+  getImage (imageName: string) {
+    console.log(imageName)
+    return !imageName ? require('../assets/heste_mates/pony_free.png') : require('../assets/heste_mates/' + imageName)
+  }
+
+  get currentYear () {
+    const date = new Date()
+    return date.getFullYear()
+  }
 }
+
 </script>
 
 <style>
