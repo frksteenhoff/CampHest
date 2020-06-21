@@ -15,7 +15,7 @@
 	   "slogan":"Gør det du er hest til - det gør vi",
 	   "funFact":"33-årig mand fanget i en 48-årig mands krop",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"andreas.png"
 	},
@@ -72,7 +72,7 @@
 	{
 	   "name":"Søren",
 	   "alias":"",
-	   "slogan":"A Horse to be reckoned with",
+	   "slogan":"Pony, Pony, Pony, Must be funny",
 	   "funFact":"Brygger de heste øl! Har cyklet til Venedig fra KBH.",
 	   "yearsAtRoskilde":[
 		  "2018", "2020"
@@ -242,7 +242,7 @@
 	{
 	   "name":"Thue",
 	   "alias": "2A (udtalt på engelsk)",
-	   "slogan": "Hver dag er en hest",
+	   "slogan": "The horse awakens",
 	   "funFact":"Dukker ofte op en måned for sent",
 	   "yearsAtRoskilde":[
 		  "2018", "2019", "2020"
@@ -383,7 +383,7 @@
 	   "name":"Marie",
 	   "alias":"",
 	   "slogan":"",
-	   "funFact":"",
+	   "funFact":"Æreshest",
 	   "yearsAtRoskilde":[
 		  "2020"
 	   ],
@@ -392,6 +392,76 @@
 	{
 	   "name":"Simrone",
 	   "alias":"Sim",
+	   "slogan":"",
+	   "funFact":"Ubuden hest",
+	   "yearsAtRoskilde":[
+		  "2020"
+	   ],
+	   "imageUrl":""
+	},
+	{
+	   "name":"Martin",
+	   "alias":"mTropi",
+	   "slogan":"",
+	   "funFact":"",
+	   "yearsAtRoskilde":[
+		  "2020"
+	   ],
+	   "imageUrl":""
+	},
+	{
+	   "name":"Michael",
+	   "alias":"Raagaard",
+	   "slogan":"",
+	   "funFact":"",
+	   "yearsAtRoskilde":[
+		  "2020"
+	   ],
+	   "imageUrl":""
+	},
+	{
+	   "name":"Nanna",
+	   "alias":"",
+	   "slogan":"I hest my case",
+	   "funFact":"",
+	   "yearsAtRoskilde":[
+		  "2020"
+	   ],
+	   "imageUrl":""
+	},
+	{
+	   "name":"Kathrine",
+	   "alias":"",
+	   "slogan":"",
+	   "funFact":"A horse to be reckoned with",
+	   "yearsAtRoskilde":[
+		  "2020"
+	   ],
+	   "imageUrl":""
+	},
+	{
+	   "name":"Melanie",
+	   "alias":"Mel",
+	   "slogan":"",
+	   "funFact":"",
+	   "yearsAtRoskilde":[
+		  "2020"
+	   ],
+	   "imageUrl":""
+	},
+	{
+	   "name":"Kirsa",
+	   "alias":"",
+	   "slogan":"Fortsat ko hest",
+	   "funFact":"",
+	   "yearsAtRoskilde":[
+		  "2020"
+	   ],
+	   "imageUrl":""
+	},
+	{
+	   "name":"Uffe",
+	   "alias":"",
 	   "slogan":"",
 	   "funFact":"",
 	   "yearsAtRoskilde":[

@@ -36,7 +36,7 @@
                 <b-col cols="9">
                   <p class="name">{{ hest.name }}<span style="font-style: italic; font-weight: normal" v-if="hest.alias">{{", " + hest.alias }}</span></p>
                   <p class="small">" {{ hest.slogan ? hest.slogan : "Mangler" }} "</p>
-                  <p class="small" style="font-style: normal;">{{ hest.funFact ? hest.funFact : "-" }}</p>
+                  <p class="small" style="font-style: normal;">{{ hest.funFact ? hest.funFact : "" }}</p>
                 </b-col>
              </b-row>
           </div>
