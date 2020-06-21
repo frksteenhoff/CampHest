@@ -5,7 +5,7 @@
 	   "slogan":"Hestiny's Child",
 	   "funFact":"Kan ryste med øjnene",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"phia.png"
 	},
@@ -35,7 +35,7 @@
 	   "slogan":"Horse your daddy?",
 	   "funFact":" Har 'solgt' Justin Bieber billetter på DBA med en 'vens' telefonnummer stående.",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"lars.png"
 	},
@@ -55,7 +55,7 @@
 	   "slogan":"¿Cómo hestás?",
 	   "funFact":"",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2020"
 	   ],
 	   "imageUrl":"philip.png"
 	},
@@ -65,7 +65,7 @@
 	   "slogan":"I Fucking Hate Attention Horse",
 	   "funFact":"Ikke fra Norge",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"norge.png"
 	},
@@ -75,7 +75,7 @@
 	   "slogan":"A Horse to be reckoned with",
 	   "funFact":"Brygger de heste øl! Har cyklet til Venedig fra KBH.",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2020"
 	   ],
 	   "imageUrl":"soren.png"
 	},
@@ -85,15 +85,15 @@
 	   "slogan":"The hest of both worlds",
 	   "funFact":"Har styret et fly",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"emilie.png"
 	},
 	{
 	   "name":"Josefine",
 	   "alias":"Jose",
-	   "funFact":"You're simply the hest",
-	   "slogan":"Er rimelig sej til parkour",
+	   "slogan":"You're simply the hest",
+	   "funFact":"Er rimelig sej til parkour",
 	   "yearsAtRoskilde":[
 		  "2018"
 	   ],
@@ -135,7 +135,7 @@
 	   "slogan":"For every horse there's an equal horse in the opposite direction",
 	   "funFact":"Kan hele '4 chord song' udenad",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"jeppe.png"
 	},
@@ -165,7 +165,7 @@
 	   "slogan":"May the horse be with you",
 	   "funFact":"Token Aussie",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"madeline.png"
 	},
@@ -195,7 +195,7 @@
 	   "slogan":"alias yolo='git push --horse'",
 	   "funFact":"Er nordmand",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2020"
 	   ],
 	   "imageUrl":"henriette.png"
 	},
@@ -205,7 +205,7 @@
 	   "slogan":"Lige ved og hesten",
 	   "funFact":"Kører på motorcykel",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"laura.png"
 	},
@@ -225,7 +225,7 @@
 	   "slogan":"Ude godt, hjemme hest",
 	   "funFact":"Kunderne elsker ham",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2020"
 	   ],
 	   "imageUrl":"staehr.png"
 	},
@@ -237,14 +237,15 @@
 	   "yearsAtRoskilde":[
 		  "2018"
 	   ],
-	   "imageUrl":""
+	   "imageUrl":"sigurd.png"
 	},
 	{
 	   "name":"Thue",
-	   "slogan":"2A (udtalt på engelsk)",
-	   "funFact":"Dkker ofte op en måned for sent",
+	   "alias": "2A (udtalt på engelsk)",
+	   "slogan": "Hver dag er en hest",
+	   "funFact":"Dukker ofte op en måned for sent",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"thue.png"
 	},
@@ -254,7 +255,7 @@
 	   "slogan":"Den der ler sidst ler hest",
 	   "funFact":"Favorit tømmermændsmad er sprøde grønne salatblade (gerne romaine eller hjertesalat)",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"astrid.png"
 	},
@@ -264,7 +265,7 @@
 	   "slogan":"Borte med hesten",
 	   "funFact":"Er gammel fynsmester i adskillige ting",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"geisler.png"
 	},
@@ -274,7 +275,7 @@
 	   "slogan":"I hest my case",
 	   "funFact":"Har efterladt sin telefon i et køleskab og kunne derefter ikke finde den",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"cille.png"
 	},
@@ -284,7 +285,7 @@
 	   "slogan":"Nord, Syd, Øst, Hest",
 	   "funFact":"Har i en Tequila-brandert testet en cykelhjelm ved at hoppe med hovedet først ind i en væg",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"loke.png"
 	},
@@ -294,7 +295,7 @@
 	   "slogan":"Don't hestitate",
 	   "funFact":"Har bygget et elektrisk skateboard der kører 45 i timen.",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2020"
 	   ],
 	   "imageUrl":"laurent.png"
 	},
@@ -324,7 +325,7 @@
 	   "slogan":"The hest a man can get",
 	   "funFact":"Kan ikke lide ca. den sidste halvdel af cola i plastikflasker",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"kimi.png"
 	},
@@ -334,7 +335,7 @@
 	   "slogan":"Ich bin Pferdliebt",
 	   "funFact":"Giver de heste råd om høfeber",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2020"
 	   ],
 	   "imageUrl":"anna.png"
 	},
@@ -344,7 +345,7 @@
 	   "slogan":"Horse of nature",
 	   "funFact":"Har hesteallergi",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"pernille.png"
 	},
@@ -374,7 +375,7 @@
 	   "slogan":"Horse = Mass * Acceleration",
 	   "funFact":"Har slikket på deo for at få bedre ånde",
 	   "yearsAtRoskilde":[
-		  "2018"
+		  "2014", "2015", "2016", "2017", "2018", "2019", "2020"
 	   ],
 	   "imageUrl":"niels.png"
 	},

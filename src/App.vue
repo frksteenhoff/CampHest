@@ -216,7 +216,6 @@ p.top_line {
   font-weight:bold;
 }
 p.end_line {
-  margin-top: 4em;
   font-size: 30px;
   font-family:'Permanent Marker';
 }
