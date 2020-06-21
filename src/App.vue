@@ -50,11 +50,6 @@ const AppProps = Vue.extend({
 export default class App extends AppProps {
   links = [
     {
-      id: 0,
-      text: 'Hjem',
-      page: '/'
-    },
-    {
       id: 1,
       text: 'Roskilde',
       page: '/Events'
@@ -66,7 +61,7 @@ export default class App extends AppProps {
     },
     {
       id: 3,
-      text: 'Your stable mates',
+      text: 'Our stable mates',
       page: '/About'
     },
     {
