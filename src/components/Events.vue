@@ -7,13 +7,14 @@
       <p class="mt-2">På Roskilde laver vi forskellige events både for os selv og for andre. Her skriver vi lidt om, hvad de går ud på.</p>
     </b-row>
     <b-row class="m-3">
-        <img src="../assets/heste_promo/camphest_logo_large_widest.jpg" alt="Camp Hest @ Roskilde" />
-    </b-row>
+      <img src="../assets/heste_fest/hest_large.jpg" alt="Camp Hest @ Roskilde" />
+   </b-row>
 
    <!-- List all prior events -->
     <b-row v-for="event in events" v-bind:key="event.id"
          :to="`${event.no}`">
-      <h1>{{ event.header }}</h1>
+      <h1 class="mb-3">{{ event.header }}</h1>
+      <img v-if="event.img" class="pl-5 mb-3" :src="getImage(event.img)" :alt="'Camp Hest @ Roskilde - ' + event.header" />
       <p>{{ event.desc }}</p>
     </b-row>
   </b-container>
@@ -33,24 +34,32 @@ export default class Events extends AppProps {
     {
       id: 0,
       header: 'Hestevæddeløb',
+      img: 'hestevaeddeloeb.jpg',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis dui dapibus, sagittis neque id, rhoncus augue. Curabitur iaculis cursus ipsum ac fringilla. Curabitur eu lorem ut ligula volutpat viverra in in elit. Fusce malesuada ultrices augue a iaculis. Aliquam varius, eros eu ornare vestibulum, tortor mauris molestie orci, venenatis egestas felis lorem ut sem. Aenean a dui condimentum, efficitur nisi malesuada, sodales purus. Aenean in mi et sem cursus gravida. Nam id tortor nec ligula dignissim ultricies. Vestibulum venenatis eget dolor sodales mollis. Ut porta et risus vitae elementum. Vivamus sodales lorem elit, iaculis ornare enim semper in.'
     },
     {
       id: 1,
       header: 'Tour de Dannebrog',
+      img: 'hest_dannebrog.jpg',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis dui dapibus, sagittis neque id, rhoncus augue. Curabitur iaculis cursus ipsum ac fringilla. Curabitur eu lorem ut ligula volutpat viverra in in elit. Fusce malesuada ultrices augue a iaculis. Aliquam varius, eros eu ornare vestibulum, tortor mauris molestie orci, venenatis egestas felis lorem ut sem. Aenean a dui condimentum, efficitur nisi malesuada, sodales purus. Aenean in mi et sem cursus gravida. Nam id tortor nec ligula dignissim ultricies. Vestibulum venenatis eget dolor sodales mollis. Ut porta et risus vitae elementum. Vivamus sodales lorem elit, iaculis ornare enim semper in.'
     },
     {
       id: 2,
       header: 'Hestival Bingo',
+      img: '',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis dui dapibus, sagittis neque id, rhoncus augue. Curabitur iaculis cursus ipsum ac fringilla. Curabitur eu lorem ut ligula volutpat viverra in in elit. Fusce malesuada ultrices augue a iaculis. Aliquam varius, eros eu ornare vestibulum, tortor mauris molestie orci, venenatis egestas felis lorem ut sem. Aenean a dui condimentum, efficitur nisi malesuada, sodales purus. Aenean in mi et sem cursus gravida. Nam id tortor nec ligula dignissim ultricies. Vestibulum venenatis eget dolor sodales mollis. Ut porta et risus vitae elementum. Vivamus sodales lorem elit, iaculis ornare enim semper in.'
     },
     {
       id: 3,
       header: "Giv os dine 'bollebilletter'",
+      img: 'bollebilletter.jpg',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis dui dapibus, sagittis neque id, rhoncus augue. Curabitur iaculis cursus ipsum ac fringilla. Curabitur eu lorem ut ligula volutpat viverra in in elit. Fusce malesuada ultrices augue a iaculis. Aliquam varius, eros eu ornare vestibulum, tortor mauris molestie orci, venenatis egestas felis lorem ut sem. Aenean a dui condimentum, efficitur nisi malesuada, sodales purus. Aenean in mi et sem cursus gravida. Nam id tortor nec ligula dignissim ultricies. Vestibulum venenatis eget dolor sodales mollis. Ut porta et risus vitae elementum. Vivamus sodales lorem elit, iaculis ornare enim semper in.'
     }
   ]
+
+  getImage (imageName: string) {
+    return !imageName ? require('../assets/heste_mates/pony_free.png') : require('../assets/heste_fest/' + imageName)
+  }
 };
 </script>
 

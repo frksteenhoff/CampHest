@@ -94,7 +94,7 @@ body {
   background-position: left 30px;
   background-image: url("./assets/heste_promo/camphest_logo_large.jpg");
   background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 30%,rgba(255,255,255,0.9) 30%), url("../src/assets/heste_promo/camphest_logo_large.jpg");
-  background-size: 100%;
+  background-size: 200%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #cccccc;
@@ -215,8 +215,8 @@ footer {
 p.top_line {
   font-weight:bold;
 }
-p.end_line {
-  font-size: 30px;
+p.marker {
+  font-size: 1.6rem;
   font-family:'Permanent Marker';
 }
 .under_header {

@@ -3,7 +3,7 @@
     <img src="../assets/heste_fest/hest_camp.jpg"  alt="Camp Hest" />
     <b-container>
       <b-row class="mt-3 mb-2">
-        <b-col cols="12" class="mb-3">
+        <b-col cols="12" class="mb-4">
           <h1>Deltagere Roskilde Hestival {{ chosenYear }} <span v-if="chosenYear === 2020">@ Følsborg</span></h1>
         </b-col>
         <b-col>
@@ -42,7 +42,7 @@
           </div>
         </b-col>
        <b-col v-if="horsesInYear.length === 0">
-          <p class="end_line" style="font-size: 1rem;">What horsery is this!? Vi har endnu ikke tilføjet hvilke heste, der var med dette år. Stay tuned!</p>
+          <p class="marker" style="font-size: 1rem;">What horsery is this!? Vi har endnu ikke tilføjet hvilke heste, der var med dette år. Stay tuned!</p>
        </b-col>
     </b-row>
     </b-container>
