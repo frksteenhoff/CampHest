@@ -54,11 +54,13 @@ export default class App extends AppProps {
       text: 'Roskilde',
       page: '/Events'
     },
+    /*
     {
       id: 2,
       text: 'Hjælp',
       page: '/Help'
     },
+    */
     {
       id: 3,
       text: 'Our stable mates',
