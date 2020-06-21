@@ -29,7 +29,7 @@
 
     <!-- IMAGES -->
     <b-row class="hestebilleder">
-      <b-col cols="12" md="6" xl="4" v-for="image in range(0, 17)" :key="image">
+      <b-col cols="12" md="6" xl="4" v-for="image in range(0, 18)" :key="image">
         <b-img fluid-grow :src="getImage(`hest${image}.jpg`)" alt="Camp Hest @ Roskilde" />
       </b-col>
     </b-row>
