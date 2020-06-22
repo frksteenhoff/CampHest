@@ -25,7 +25,7 @@
           </b-col>
       </b-row>
     <b-row class="mt-5">
-        <b-col cols="12" md="6" xl="4" class="hest mb-3"
+        <b-col cols="12" md="6" xl="4" class="hest mb-5 mb-xl-3"
           v-for="hest in horsesInYear"
           :key="hest.name + hest.imageUrl">
           <div v-if="hest.name">
@@ -35,6 +35,7 @@
                 </b-col>
                 <b-col cols="9">
                   <p class="name">{{ hest.name }}<span style="font-style: italic; font-weight: normal" v-if="hest.alias">{{", " + hest.alias }}</span></p>
+                  <p class="mt-0 mb-3" style="font-size: 0.8rem;">{{"🐴".repeat(hest.yearsAtRoskilde.length) }}</p>
                   <p class="small">" {{ hest.slogan ? hest.slogan : "Mangler" }} "</p>
                   <p class="small" style="font-style: normal;">{{ hest.funFact ? hest.funFact : "" }}</p>
                 </b-col>
