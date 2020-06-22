@@ -4,13 +4,13 @@
     <b-container>
       <b-row class="mt-3 mb-2">
         <b-col cols="12" class="mb-4">
-          <h1>Deltagere Roskilde Hestival {{ chosenYear }} <span v-if="chosenYear === 2020">@ Følsborg</span></h1>
+          <h1 class="ml-0">Deltagere Roskilde Hestival {{ chosenYear }} <span v-if="chosenYear === 2020">@ Følsborg</span></h1>
         </b-col>
         <b-col>
-          <p>Her kan du læse lidt om alle deltagere i Camp Hest fra campens start i 2010? til i dag. Vælg årstal nedenunder.</p>
+          <p class="p-0 ml-0">Her kan du læse lidt om alle deltagere i Camp Hest fra campens start i 2010? til i dag. Vælg årstal nedenunder.</p>
         </b-col>
       </b-row>
-      <b-row class="pl-5 pr-5">
+      <b-row class="pr-5">
           <b-col cols="6" class="mb-3">
             <b-form-select v-model="chosenYear" :options="campHestYears">
               <template v-slot:first>
@@ -19,25 +19,29 @@
             </b-form-select>
           </b-col>
       </b-row>
-      <b-row class="pl-5 pr-5">
+      <b-row class="pr-5">
           <b-col style="font-style: italic">
               Antal deltagere: {{ horsesInYear.length}}
           </b-col>
       </b-row>
     <b-row class="mt-5">
-        <b-col cols="12" md="6" xl="4" class="hest mb-5 mb-xl-3"
+        <b-col cols="12" md="6" xl="4" class="hest mb-xl-3"
           v-for="hest in horsesInYear"
           :key="hest.name + hest.imageUrl">
           <div v-if="hest.name">
               <b-row>
-                <b-col cols="3">
+                <b-col cols="12" sm="3" md="5" lg="4" xl="5">
                 <img class="img_about" :src="getImage(hest.imageUrl)" />
                 </b-col>
-                <b-col cols="9">
-                  <p class="name">{{ hest.name }}<span style="font-style: italic; font-weight: normal" v-if="hest.alias">{{", " + hest.alias }}</span></p>
-                  <p class="mt-0 mb-3" style="font-size: 0.8rem;">{{"🐴".repeat(hest.yearsAtRoskilde.length) }}</p>
-                  <p class="small">" {{ hest.slogan ? hest.slogan : "Mangler" }} "</p>
-                  <p class="small" style="font-style: normal;">{{ hest.funFact ? hest.funFact : "" }}</p>
+                <b-col class="pl-xs-3 pl-md-0">
+                  <p class="horse name">{{ hest.name }}<span style="font-style: italic; font-weight: normal" v-if="hest.alias">{{", " + hest.alias }}</span></p>
+                  <p class="horse mt-0 mb-3" style="font-size: 0.8rem;">{{"🐴".repeat(hest.yearsAtRoskilde.length) }}</p>
+                </b-col>
+             </b-row>
+             <b-row>
+               <b-col class="mt-3">
+                  <p class="horse small">" {{ hest.slogan ? hest.slogan : "Mangler" }} "</p>
+                  <p class="horse small" style="font-style: normal;">{{ hest.funFact ? hest.funFact : "" }}</p>
                 </b-col>
              </b-row>
           </div>
@@ -122,6 +126,11 @@ img {
 
 .hest p {
   font-size: 20px;
+}
+
+.horse {
+  padding-left: 0;
+  margin-left: 0;
 }
 
 p.small {
