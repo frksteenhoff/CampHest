@@ -35,19 +35,19 @@ export default class Events extends AppProps {
       id: 0,
       header: 'Hestevæddeløb',
       img: 'hestevaeddeloeb.jpg',
-      desc: ''
+      desc: 'Vi udfordrer dig til hestevæddeløb! Til lyden af hestehove og tilråb beder vi dig og en makker om at hoppe i ét af vores 5 hestekostumer og tager derefter en tur i ægte væddeløbsstil.'
     },
     {
       id: 1,
       header: 'Tour de Dannebrog',
       img: 'hest_dannebrog.jpg',
-      desc: ''
+      desc: 'Alle klæder sig ud i rødt og hvidt og derefter tager vi på eventyr. Ruten går fra Dannebrogsflag til Dannebrogsflag og slutter først når der ikke er flere tilbage.'
     },
     {
       id: 3,
       header: "Giv os dine 'bollebilletter'",
       img: 'bollebilletter.jpg',
-      desc: ''
+      desc: 'Vi samler dåsesplitter og vil gerne være de bedste i Clean out Loud til netop dette. Skulle du ligge inde med nogle overskydende splitter, tager vi imod dem med kyshånd og giver gerne en bajer i lejeren!'
     }
   ]
 
