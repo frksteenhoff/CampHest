@@ -40,8 +40,8 @@
              </b-row>
              <b-row>
                <b-col class="mt-3">
-                  <p class="horse small"><span class="font-weight-bold">Slogan: </span>"{{ hest.slogan ? hest.slogan : "" }}"</p>
-                  <p class="horse small" style="font-style: normal;"><span class="font-weight-bold">Fun fact: </span>{{ hest.funFact ? hest.funFact : "" }}</p>
+                  <p v-if="hest.slogan" class="horse small"><span class="font-weight-bold">Slogan: </span>"{{ hest.slogan }}"</p>
+                  <p v-if="hest.funFact" class="horse small" style="font-style: normal;"><span class="font-weight-bold">Fun fact: </span>{{ hest.funFact }}</p>
                 </b-col>
              </b-row>
           </div>
