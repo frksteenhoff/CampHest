@@ -30,8 +30,8 @@
           :key="hest.name + hest.imageUrl">
           <div v-if="hest.name">
               <b-row>
-                <b-col cols="12" sm="3" md="5" lg="4" xl="5">
-                <img class="img_about" :src="getImage(hest.imageUrl)" />
+                <b-col cols="5" sm="3" md="5" lg="4" xl="5">
+                  <img class="img_about" :src="getImage(hest.imageUrl)" />
                 </b-col>
                 <b-col class="pl-xs-3 pl-md-0">
                   <p class="horse name">{{ hest.name }}<span style="font-style: italic; font-weight: normal" v-if="hest.alias">{{", " + hest.alias }}</span></p>
@@ -40,8 +40,8 @@
              </b-row>
              <b-row>
                <b-col class="mt-3">
-                  <p class="horse small">" {{ hest.slogan ? hest.slogan : "Mangler" }} "</p>
-                  <p class="horse small" style="font-style: normal;">{{ hest.funFact ? hest.funFact : "" }}</p>
+                  <p class="horse small"><span class="font-weight-bold">Slogan: </span>"{{ hest.slogan ? hest.slogan : "" }}"</p>
+                  <p class="horse small" style="font-style: normal;"><span class="font-weight-bold">Fun fact: </span>{{ hest.funFact ? hest.funFact : "" }}</p>
                 </b-col>
              </b-row>
           </div>
