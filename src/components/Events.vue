@@ -6,15 +6,15 @@
     <b-row>
       <p class="mt-2">På Roskilde laver vi forskellige events både for os selv og for andre. Her skriver vi lidt om, hvad de går ud på.</p>
     </b-row>
-    <b-row class="ml-5 m-3 pb-4">
+    <b-row class="p-3 pb-4">
       <img src="../assets/heste_fest/hest_large.jpg" alt="Camp Hest @ Roskilde" />
    </b-row>
 
    <!-- List all prior events -->
     <b-row v-for="event in events" v-bind:key="event.id"
-         :to="`${event.no}`" class="pb-5">
+         :to="`${event.no}`" class="pb-3">
       <h1 class="mb-3">{{ event.header }}</h1>
-      <img v-if="event.img" class="pl-5 mb-3" :src="getImage(event.img)" :alt="'Camp Hest @ Roskilde - ' + event.header" />
+      <img v-if="event.img" class="p-3" :src="getImage(event.img)" :alt="'Camp Hest @ Roskilde - ' + event.header" />
       <p>{{ event.desc }}</p>
     </b-row>
   </b-container>
