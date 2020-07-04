@@ -80,9 +80,9 @@ export default class App extends AppProps {
 @import url('//fonts.googleapis.com/css?family=Roboto:300,400,600,700&amp;lang=en');
 
 @media only screen and (max-width: 480px) {
-       h1 { font-size: 0.45rem !important; }
-       h2 { font-size: 0.35rem !important; }
-       h3 { font-size: 0.3rem !important; }
+       h1 { font-size: 1rem !important; }
+       h2 { font-size: 0.8rem !important; }
+       h3 { font-size: 0.6rem !important; }
      }
 
 body {
@@ -155,7 +155,7 @@ h1 {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.4;
   margin-left: 0.525rem;
   margin-right: 0.525rem;
@@ -172,7 +172,7 @@ li {
 }
 
 p a {
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-decoration: none !important;
 }
 
