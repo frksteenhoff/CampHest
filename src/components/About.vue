@@ -30,7 +30,7 @@
           :key="hest.name + hest.imageUrl">
           <div v-if="hest.name">
               <b-row>
-                <b-col cols="5" sm="3" md="5" lg="4" xl="5">
+                <b-col cols="5">
                   <p class="horse name">{{ hest.name }}<span style="font-style: italic; font-weight: normal" v-if="hest.alias">{{", " + hest.alias }}</span></p>
                   <p class="horse mt-0 mb-3" style="font-size: 0.8rem;">{{"🐴".repeat(hest.yearsAtRoskilde.length) }}</p>
                 </b-col>
@@ -88,15 +88,15 @@ export default class About extends AppProps {
 
 <style>
 ul {
-  margin-top: 40px;
-  margin-left: 41px;
-  margin-right: 41px;
+  margin-top: 1rem;
+  margin-left: 1.025rem;
+  margin-right: 1.025rem;
   list-style-type: disc;
   -webkit-columns: 3;
   -moz-columns: 3;
   columns: 3;
   list-style-position: inside;
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
   width: 90%;
   align-content: center;
 }
@@ -106,9 +106,9 @@ ul {
 }
 
 img.img_about {
-  width: 120px;
+  width: 6rem;
   float: left;
-  margin-right: 20px;
+  margin-right: 0.5rem;
 }
 
 img {
@@ -116,16 +116,11 @@ img {
 }
 
 .hest {
-  margin-bottom: 70px;
-}
-
-.hest p1 {
-  font-size: 20px;
-  line-height: 1em;
+  margin-bottom: 1.75rem;
 }
 
 .hest p {
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .horse {

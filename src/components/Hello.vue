@@ -67,12 +67,12 @@ export default class Hello extends AppProps {
 
 <style>
 div.topics {
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
 }
 
 .hestebilleder img {
   transition: 0.5s ease;
-  margin: 15px;
+  margin: 0.375rem;
 }
 
 .hestebilleder img:hover {

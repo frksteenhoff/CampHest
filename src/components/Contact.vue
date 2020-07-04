@@ -1,13 +1,15 @@
 <template>
     <div class="under_header">
-      <b-container class="ml-0">
+      <b-container class="ml-0 mt-3">
         <b-row>
-          <b-col cols="12" md="5">
+          <b-col cols="12" class="mb-3">
             <h1>Kontakt</h1>
-            <div class="contactinfo" v-for="person in kontaktpersoner" v-bind:key="person.id"
+          </b-col>
+          <b-col cols="12" md="5">
+            <div class="contactinfo mb-4" v-for="person in kontaktpersoner" v-bind:key="person.id"
                 :to="`${person.no}`">
-              <div class="middle">
-                <p class="top_line">{{person.name}}</p>
+              <div>
+                <p class="font-weight-bold">{{person.name}}</p>
                 <p><a class="pl-0" :href="`mailto:${person.email}`">{{ person.email }}</a></p>
                 <p>{{ person.phone }}</p>
               </div>
@@ -17,9 +19,9 @@
           <img src="../assets/heste_fest/arena_fest.jpg">
         </b-col>
       </b-row>
-    <b-row class="mt-3">
-      <p class="marker big">Eller kom forbi os i campen til sommer!</p>
-    </b-row>
+      <b-col class="mt-3">
+        <p class="marker">Eller kom forbi os i campen til sommer!</p>
+      </b-col>
     </b-container>
   </div>
 </template>
@@ -60,12 +62,7 @@ export default class Contact extends AppProps {
 <style scoped>
 
 .contactinfo {
-  margin-top: 21px;
-}
-
-.middle {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 0.525rem;
 }
 
 .contactinfo p{
@@ -73,17 +70,9 @@ export default class Contact extends AppProps {
   margin-bottom: 0.1em;
 }
 
-p {
-  font-size: 1rem;
-}
-
 p a, a:link {
   color: #000;
   text-decoration: none !important;
-}
-
-p.big {
-  font-size: 1.5rem;
 }
 
 </style>

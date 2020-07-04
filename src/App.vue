@@ -18,7 +18,7 @@
     </div>
      <footer>
        <div class="footerinfo">
-          <p style="font-size: 30px; font-family: 'Permanent Marker'; font-weight: bold">
+          <p style="font-size: 1.4rem; font-family: 'Permanent Marker'; font-weight: bold">
             Camp Hest
             <!-- Adding logo inline -->
             <span id="insta_logo">
@@ -80,15 +80,15 @@ export default class App extends AppProps {
 @import url('//fonts.googleapis.com/css?family=Roboto:300,400,600,700&amp;lang=en');
 
 @media only screen and (max-width: 480px) {
-       h1 { font-size: 18px !important; }
-       h2 { font-size: 14px !important; }
-       h3 { font-size: 12px !important; }
+       h1 { font-size: 0.45rem !important; }
+       h2 { font-size: 0.35rem !important; }
+       h3 { font-size: 0.3rem !important; }
      }
 
 body {
   margin: 0;
   width: 100%;
-  background-position: left 30px;
+  background-position: left 0.75rem;
   background-image: url("./assets/heste_promo/camphest_logo_large.jpg");
   background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 30%,rgba(255,255,255,0.9) 30%), url("../src/assets/heste_promo/camphest_logo_large.jpg");
   background-size: 200%;
@@ -104,8 +104,8 @@ body {
 }
 
 h1 {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
+  margin-top: 0.75rem !important;
+  margin-bottom: 1rem !important;
 
 }
 
@@ -114,7 +114,7 @@ ul.navbar-nav {
 }
 nav, li a.nav-link, a.link-item {
   color: #fd6a02 !important;
-  font-size: 30px;
+  font-size: 1.3rem;
   background: #000000;
   font-family: 'Permanent Marker';
 }
@@ -134,29 +134,33 @@ nav, li a.nav-link, a.link-item {
 img {
   margin: 0;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 0.25rem;
   justify-content: center;
 
 }
+
 p, h1, h2 {
   font-weight: normal;
-  padding-left: 21px;
-  padding-right: 21px;
+  padding-left: 0.525rem;
+  padding-right: 0.525rem;
 }
+
 h1 {
   font-family: 'Permanent Marker';
   background-color:#fd6a02;
   color:#ffffff;
   display: inline;
-  margin-left: 41px;
-  margin-right: 41px;
+  margin-left: 1.025rem;
+  margin-right: 1.025rem;
 }
+
 p {
   font-size: 1.3rem;
   line-height: 1.4;
-  margin-left: 21px;
-  margin-right: 21px;
+  margin-left: 0.525rem;
+  margin-right: 0.525rem;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -164,16 +168,18 @@ ul {
 
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 0.25rem;
 }
+
 p a {
-    font-size: 20px;
+    font-size: 1.3rem;
     text-decoration: none !important;
 }
+
 #insta_logo img {
-    margin: 41px;
-    height: 40px;
-    width: 40px;
+    margin: 1.025rem;
+    height: 2rem;
+    width: 2rem;
 }
 #insta_logo a:hover {
     background-color: #000000;
@@ -182,9 +188,9 @@ p a {
 a {
   color: #fd6a02;
   text-decoration: none;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0.125rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 a:hover {
   /*text-decoration: underline !important;*/
@@ -196,28 +202,26 @@ footer {
   width: 100%;
   position: absolute;
   margin: 0;
-  padding: 16px 0 16px 0;
-  padding-bottom: 40px;
+  padding: 0.4rem 0 0.4rem 0;
+  padding-bottom: 1rem;
   background-color: #000000;
   color: #fd6a02;
 }
 .footerinfo p, .footerinfo p a {
-  font-size: 20px;
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
-  padding-left: 21px;
+  font-size: 1rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.4rem;
+  padding-left: 0.525rem;
   text-decoration: none !important;
   color: #fd6a02 !important;
 }
-p.top_line {
-  font-weight:bold;
-}
+
 p.marker {
   font-size: 1.6rem;
   font-family:'Permanent Marker';
 }
 .under_header {
-  margin-top: 21px;
+  margin-top: 0.525rem;
 }
 
 </style>
