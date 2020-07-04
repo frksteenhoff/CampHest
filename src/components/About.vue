@@ -21,7 +21,7 @@
       </b-row>
       <b-row class="pr-5">
           <b-col style="font-style: italic">
-              Antal deltagere: {{ horsesInYear.length}}
+              Antal deltagere: {{ horsesInYear.length}}, 🐴 = antal år på Roskilde
           </b-col>
       </b-row>
     <b-row class="mt-5">
