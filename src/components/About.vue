@@ -31,15 +31,15 @@
           <div v-if="hest.name">
               <b-row>
                 <b-col cols="5" sm="3" md="5" lg="4" xl="5">
-                  <img class="img_about" :src="getImage(hest.imageUrl)" />
-                </b-col>
-                <b-col class="pl-xs-3 pl-md-0">
                   <p class="horse name">{{ hest.name }}<span style="font-style: italic; font-weight: normal" v-if="hest.alias">{{", " + hest.alias }}</span></p>
                   <p class="horse mt-0 mb-3" style="font-size: 0.8rem;">{{"🐴".repeat(hest.yearsAtRoskilde.length) }}</p>
                 </b-col>
+                <b-col>
+                  <img class="img_about" :src="getImage(hest.imageUrl)" />
+                </b-col>
              </b-row>
              <b-row>
-               <b-col class="mt-3">
+               <b-col class="mt-3 mb-4">
                   <p v-if="hest.slogan" class="horse small"><span class="font-weight-bold">Slogan: </span>"{{ hest.slogan }}"</p>
                   <p v-if="hest.funFact" class="horse small" style="font-style: normal;"><span class="font-weight-bold">Fun fact: </span>{{ hest.funFact }}</p>
                 </b-col>
