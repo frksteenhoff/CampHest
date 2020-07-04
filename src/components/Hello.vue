@@ -4,15 +4,17 @@
       <img src="../assets/heste_promo/camphest_logo_large_widest.jpg" alt="Camp Hest @ Roskilde" />
     </div>
   <b-container>
-
-    <!-- QUOTES -->
-    <!--<div class="quote">
-      <blockquote>
-        Ingen fest uden hest
-      </blockquote>
-      <cite>Thue Gram-Hansen</cite>
-    </div>-->
-
+    <b-row class="mt-3 mb-5">
+      <b-col cols="12" class="mb-4">
+        <h1>Roskilde Hestival 2020</h1>
+        <p class="mt-3">Hvordan afholdt vi do it yourself Roskilde 2020? Se med her!</p>
+      </b-col>
+      <b-col class="text-center">
+       <video autoplay controls style="width:90%;" type="video/mov">
+         <source src="https://dl.dropboxusercontent.com/s/jlyq8kifzulqfty/Timeline%201.mov?dl=0" />
+       </video>
+      </b-col>
+    </b-row>
     <b-row
       class="mt-2"
       v-for="topic in frontPageTopics"
