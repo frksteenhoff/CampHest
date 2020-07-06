@@ -51,7 +51,7 @@ export default class Hello extends AppProps {
     {
       id: 0,
       header: 'Hvem er Camp Hest?',
-      desc: 'Først og fremmest den heste camp på Roskilde!'
+      desc: 'Først og fremmest: den heste camp på Roskilde! Du kan kende os på vores orange t-shirts med hesteslogans og vores hestekostumer. Vi elsker at have camp i Clean Out Loud og går efter at være både den reneste camp og den camp, der samler flest dåsesplitter.'
     }
   ];
 
