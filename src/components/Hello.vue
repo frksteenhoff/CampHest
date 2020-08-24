@@ -10,9 +10,11 @@
         <p class="mt-3">Hvordan afholdt vi do it yourself Roskilde 2020? Se med her!</p>
       </b-col>
       <b-col class="text-center">
-       <video autoplay controls style="width:90%;" type="video/mov">
-         <source src="https://drive.google.com/file/d/1lADXcCClbO-5x6y93jeTPAgrjZcQSr90/view?usp=sharing" />
-       </video>
+       <iframe
+         src="https://drive.google.com/file/d/1lADXcCClbO-5x6y93jeTPAgrjZcQSr90/preview"
+         width="750"
+         height="400">
+      </iframe>
       </b-col>
     </b-row>
     <b-row
