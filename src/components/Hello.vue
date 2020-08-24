@@ -11,7 +11,7 @@
       </b-col>
       <b-col class="text-center">
        <video autoplay controls style="width:90%;" type="video/mov">
-         <source src="https://dl.dropboxusercontent.com/s/jlyq8kifzulqfty/Timeline%201.mov?dl=0" />
+         <source src="https://drive.google.com/file/d/1lADXcCClbO-5x6y93jeTPAgrjZcQSr90/view?usp=sharing" />
        </video>
       </b-col>
     </b-row>
